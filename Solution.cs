@@ -1,14 +1,34 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Formats.Asn1;
 
 class Solution
 {
     /// <summary>
-        /// 양꼬치
-        /// </summary>
-        /// <param name="n"></param>
-        /// <param name="k"></param>
-        /// <returns></returns>
-             
+    /// 배열의 평균값
+    /// </summary>
+    /// <param name="numbers"></param>
+    /// <returns></returns>
+    public double solution0115 (int[] numbers)
+    {
+        int sum = 0;
+        double answer = 0;
+        //배열의 요소만큼 반복
+        for(int i = 0; i<numbers.Length; i++)
+        //각 요소를 더한다
+        {
+            sum = sum += numbers [i];
+        }
+        //결과값을 배열의 크기로 나눈다
+        answer = sum / (double)numbers.Length;
+        return answer;
+    }
+    /// <summary>
+    /// 양꼬치
+    /// </summary>
+    /// <param name="n"></param>
+    /// <param name="k"></param>
+    /// <returns></returns>
+
     public int solution01142 (int n, int k)
     {
         int answer=0;
