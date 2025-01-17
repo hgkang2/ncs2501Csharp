@@ -7,8 +7,8 @@
         string str = "happy birthday!";
         //Console.WriteLine(sol.solution01162(intarray,1,3));
 
-        Util.printIntArray(sol.solution01162(intarray,1,3));
-      /* Sample sam = new Sample();
-        sam.Queue();*/
+       //Util.printIntArray(sol.solution01162(intarray,1,3));
+       Sample sam = new Sample();
+        sam.Dictionary();
     }
 }
