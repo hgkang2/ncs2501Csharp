@@ -1,8 +1,46 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Formats.Asn1;
+using System.Runtime.Serialization;
 
 class Solution
 {
+    /// <summary>
+    /// 짝수 홀수 개수
+    /// </summary>
+    /// <param name="num_list"></param>
+    /// <returns></returns>
+    public int[] solution01172(int[] num_list)
+    {
+        int[] answer = new int[2];
+        foreach(var item in num_list)
+        {
+            if(item%2==0)
+            {
+                answer[0]++;
+            }
+            else
+            {
+                answer[1]++;
+            }
+        }
+        return answer;
+    }
+    /// <summary>
+    /// 머쓱이보다 키 큰 사람
+    /// </summary>
+    /// <param name="array"></param>
+    /// <param name="height"></param>
+    /// <returns></returns>
+    public int solution0117 (int[]array, int height)
+    {
+        int answer = 0;
+        for(int i= 0; i < array.Length; i++ )
+        if (height < array [i] )
+        {
+            answer= answer+1;
+        }
+        return answer;
+    }
     /// <summary>
     /// 배열나누기
     /// </summary>
