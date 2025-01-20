@@ -5,6 +5,21 @@ using System.Runtime.Serialization;
 class Solution
 {
     /// <summary>
+    /// 피자 나눠먹기 (3)
+    /// </summary>
+    /// <param name="slice"></param>
+    /// <param name="n"></param>
+    /// <returns></returns>
+    public int solution0120(int slice,int n)
+    {
+        int answer = 0;
+        for(int i = 1; i<=n;i+=slice)
+        {
+            answer ++ ;
+        }
+        return answer;
+    }
+    /// <summary>
     /// 짝수 홀수 개수
     /// </summary>
     /// <param name="num_list"></param>
