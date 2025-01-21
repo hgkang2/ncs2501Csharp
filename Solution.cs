@@ -1,9 +1,22 @@
+using System.Data;
 using System.Diagnostics.CodeAnalysis;
 using System.Formats.Asn1;
 using System.Runtime.Serialization;
 
 class Solution
 {
+    public int[] solution0121(int[] numbers)
+    {
+        // numbers의 크기만큼 반복
+        for(int i = 0; i < numbers.Length; i++)
+        {
+        //index에 해당하는 값을 두배해서 넣기
+        //numbers[i] = numbers[i]*2;
+        numbers[i] *= 2;
+        }
+        //결과를 리턴
+        return numbers;
+    }
     /// <summary>
     /// 피자 나눠먹기 (3)
     /// </summary>
