@@ -5,6 +5,20 @@ using System.Runtime.Serialization;
 
 class Solution
 {
+    /// <summary>
+    /// 아이스아메리카노
+    /// </summary>
+    /// <param name="money"></param>
+    /// <returns></returns>
+    public int[] solution0123 (int money)
+    {
+        /*const int COFEE_PRICE = 5500;
+        int[] answer = new int[2];
+        answer[0] = money / COFEE_PRICE;
+        answer[1] = money % COFEE_PRICE;
+        return answer; */
+        return new int [] {money/5500,money %5500};
+    }
     public int[] solution0121(int[] numbers)
     {
         // numbers의 크기만큼 반복
