@@ -5,6 +5,15 @@ using System.Runtime.Serialization;
 
 class Solution
 {
+    public string solution0124(string my_string)
+    {
+        string answer = string.Empty;
+        for(int i = 0; i < my_string.Length; i++)
+        {
+            answer =my_string[i] + answer;
+        }
+        return answer;
+    }
     /// <summary>
     /// 아이스아메리카노
     /// </summary>
