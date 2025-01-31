@@ -5,6 +5,15 @@ using System.Runtime.Serialization;
 
 class Solution
 {
+    public int solution01312(int n)
+    {
+        int answer = 0;
+        int piz = n / 7;
+        int res = ((n % 7) == 0) ? 0 : 1;
+        answer = piz + res;
+        return answer;
+    }
+   
     public string solution0124(string my_string)
     {
         string answer = string.Empty;
