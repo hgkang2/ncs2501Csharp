@@ -5,6 +5,31 @@ using System.Runtime.Serialization;
 
 class Solution
 {
+    public int solution0204(int n, string control)
+    {
+        foreach(var item in control)
+        {switch (item)
+        {
+            case 'w':
+            n++;
+            break;
+            case 's':
+            n--;
+            break;
+            case 'd':
+            n+=10;
+            break;
+            case 'a':
+            n-=10;
+            break;
+            default:
+            Console.WriteLine("Error!");
+            break;
+            
+        }
+        }
+        return n;
+    }
     public int solution01312(int n)
     {
         int answer = 0;
